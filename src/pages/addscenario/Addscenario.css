@@ -1,0 +1,77 @@
+.addscenario {
+    color: white;
+    margin-left: 20%;
+    background-color: rgb(27, 23, 23);
+    height: 97.9%;
+    padding-top: 2%;
+    padding-left: 8%;
+}
+
+.formname {
+    padding-top: 6%;
+    font-size: x-large;
+}
+
+.Scenarioform {
+    padding-top: 8%;
+    width: 90%;
+    height: 20%;
+    background-color: rgb(67, 67, 68);
+}
+
+.buttons {
+    padding-top: 40px;
+}
+
+button {
+    margin-right: 25px;
+    width: 10em;
+    height: 3em;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.addbutton {
+    background-color: rgb(41, 167, 41);
+}
+
+.resetbutton {
+    background-color: rgb(218, 145, 12);
+}
+
+.gobackbutton {
+    background-color: rgb(37, 137, 204);
+}
+
+.Scenarioform {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textinput1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+input {
+    height: 40px;
+    width: 20vw;
+    padding-left: 25px;
+    border-radius: 5px;
+    display: flex;
+    background-color: rgb(59, 57, 57);
+    border: 2px solid whitesmoke
+}
+
+.textinput2 {
+    display: flex;
+    flex-direction: column;
+}

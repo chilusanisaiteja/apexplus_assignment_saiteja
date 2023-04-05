@@ -1,0 +1,33 @@
+.allscenarios {
+    color: white;
+    margin-left: 20%;
+    background-color: rgb(27, 23, 23);
+    padding-top: 2%;
+    padding-left: 8%;
+    height: 97.4%;
+}
+
+thead {
+    width: 65vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(59, 54, 54);
+    padding: 15px;
+    margin-right: 20px;
+}
+
+th {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.buttonsrow {
+    display: flex;
+    padding-top: 6%;
+    font-size: x-large;
+    align-items: center;
+}
+
+p {
+    margin-right: 50%;
+}
