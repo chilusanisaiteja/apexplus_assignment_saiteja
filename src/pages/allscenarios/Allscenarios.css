@@ -7,19 +7,34 @@
     height: 97.4%;
 }
 
-thead {
-    width: 65vw;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(59, 54, 54);
+.table {
+    margin-top: 3%;
+    width: 66vw;
+    border-collapse: collapse;
+}
+
+tr {
+    background-color: azure;
+    color: rgb(122, 93, 93);
+    border: 1px solid black
+}
+
+th,
+td {
+    font-weight: 600;
+    align-items: center;
     padding: 15px;
-    margin-right: 20px;
 }
 
 th {
-    margin-right: 10px;
-    font-weight: 600;
-}
+    color: white;
+        background-color: rgb(65, 56, 56);
+    }
+    
+    td {
+        text-align: center;
+        color: black;
+    }
 
 .buttonsrow {
     display: flex;
@@ -29,5 +44,9 @@ th {
 }
 
 p {
-    margin-right: 50%;
+    margin-right: 47%;
+    }
+    
+    .icon {
+        font-size: x-large;
 }
