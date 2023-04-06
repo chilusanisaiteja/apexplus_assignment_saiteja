@@ -1,0 +1,122 @@
+{
+  "scenarioList": [
+    {
+      "id": 1,
+      "name": "scenario1",
+      "time": 10,
+      "vehicleList": [
+        {
+          "vehicleName": "car1",
+          "speed": 6,
+          "positionx": 40,
+          "positiony": 80,
+          "Direction": "Towards"
+        },
+        {
+          "vehicleName": "car2",
+          "speed": 8,
+          "positionx": 48,
+          "positiony": 60,
+          "Direction": "Backwards"
+        },
+        {
+          "vehicleName": "car1",
+          "speed": 6,
+          "positionx": 40,
+          "positiony": 80,
+          "Direction": "Upwards"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "scenario2",
+      "time": 6,
+      "vehicleList": [
+        {
+          "vehicleName": "car1",
+          "speed": 8,
+          "positionx": 49,
+          "positiony": 60,
+          "Direction": "Towards"
+        },
+        {
+          "vehicleName": "car2",
+          "speed": 8,
+          "positionx": 48,
+          "positiony": 60,
+          "Direction": "Downwards"
+        },
+        {
+          "vehicleName": "car3",
+          "speed": 3,
+          "positionx": 30,
+          "positiony": 20,
+          "Direction": "Upwards"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "scenario3",
+      "time": 15,
+      "vehicleList": [
+        {
+          "vehicleName": "car1",
+          "speed": 6,
+          "positionx": 20,
+          "positiony": 90,
+          "Direction": "Towards"
+        },
+        {
+          "vehicleName": "car2",
+          "speed": 8,
+          "positionx": 20,
+          "positiony": 60,
+          "Direction": "Backwards"
+        },
+        {
+          "vehicleName": "car1",
+          "speed": 6,
+          "positionx": 50,
+          "positiony": 60,
+          "Direction": "Upwards"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "scenario4",
+      "time": 15,
+      "vehicleList": [
+        {
+          "vehicleName": "car1",
+          "speed": 4,
+          "positionx": 40,
+          "positiony": 80,
+          "Direction": "Downwards"
+        },
+        {
+          "vehicleName": "car2",
+          "speed": 8,
+          "positionx": 48,
+          "positiony": 60,
+          "Direction": "Backwards"
+        },
+        {
+          "vehicleName": "car1",
+          "speed": 6,
+          "positionx": 10,
+          "positiony": 0,
+          "Direction": "Upwards"
+        }
+      ]
+    },
+    {
+      "name": "sai",
+      "time": "10",
+      "vehicleList": [],
+      "id": 5
+    }
+  ]
+}
