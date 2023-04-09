@@ -49,7 +49,6 @@ function Addvehicle() {
       return;
     }
     e.preventDefault();
-    console.log(scenarioList);
     scenario?.vehicleList.push(vehicle);
     axios
       .put(`http://localhost:8000/scenarioList/${scenario?.id}`, scenario)

@@ -18,15 +18,15 @@
     text-align: center;
     margin-bottom: 10px;
     animation-name: animea;
-    animation-duration: 4s;
+    animation-duration: 10s;
 }
 
 @keyframes animea {
     from {
-        left: 0;
+        left: 0%;
     }
 
     to {
-        left: 590px;
+        left: 300%;
     }
 }

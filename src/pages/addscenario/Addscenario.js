@@ -11,7 +11,6 @@ function Addscenario() {
   };
   const [scenarioinput, setscenarioinput] = useState(initialvalues);
   const handleaddbutton = (e) => {
-    console.log(scenarioinput);
     if (scenarioinput.name === "" || scenarioinput.time === "") {
       return;
     }

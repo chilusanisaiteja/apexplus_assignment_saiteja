@@ -4,31 +4,30 @@ import Grid from "../grid/Grid.js";
 import { MdModeEdit } from "react-icons/md";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import "./Home.css";
+import { Link } from "react-router-dom";
+
 const Home = () => {
-  const [scenario, setscenario] = useState([]);
+  const [scenarioList, setscenarioList] = useState([]);
+  const [startsimulation, setstartsimulation] = useState(false);
+  const [vehicleList, setvehicleList] = useState([]);
+
+
   useEffect(() => {
     axios
       .get("http://localhost:8000/scenarioList")
       .then((res) => {
-        console.log(res);
-        setscenario(res.data);
+        setscenarioList(res.data);
+        setvehicleList(res.data[0].vehicleList);
       })
       .catch((err) => console.log(err));
   }, []);
 
-  const [startsimulation, setstartsimulation] = useState(false);
-  const [isloading, setisloading] = useState(false);
-  const [vehicleList, setvehicleList] = useState([]);
 
   const handlechange = (e) => {
-    if (!isloading) {
-      setvehicleList(scenario[0].vehicleList);
-      setisloading(true);
-    }
-    const scenariolist = scenario.filter((scenario) => {
-      return scenario.name === e.target.value;
-    });
-    setvehicleList(scenariolist[0].vehicleList);
+    const product = scenarioList.filter((s) => {
+      return s.name === e.target.value;
+  });
+    setvehicleList(product[0].vehicleList);
   };
   return (
     <div className="home">
@@ -36,10 +35,9 @@ const Home = () => {
         <label>Scenario</label>
         <select
           onChange={handlechange}
-          defaultValue={scenario[0]}
           className="scenariolist"
         >
-          {scenario.map((scenario) => (
+          {scenarioList.map((scenario) => (
             <option value={scenario.name} name={scenario.name}>
               {scenario.name}
             </option>
@@ -63,7 +61,7 @@ const Home = () => {
           <tbody>
             {vehicleList.map((vehicle, i) =>
               i < 5 ? (
-                <tr key={i}>
+                <tr>
                   <td>{i + 1}</td>
                   <td>{vehicle.vehicleName}</td>
                   <td>{vehicle.positionx}</td>
@@ -71,10 +69,12 @@ const Home = () => {
                   <td>{vehicle.speed}</td>
                   <td>{vehicle.Direction}</td>
                   <td>
-                    <MdModeEdit />
+                  <Link to="/addvehicle">
+                    <MdModeEdit/>
+                    </Link>
                   </td>
                   <td>
-                    <RiDeleteBin5Fill />
+                    <RiDeleteBin5Fill/> 
                   </td>
                 </tr>
               ) : null
@@ -105,9 +105,7 @@ const Home = () => {
       </div>
       <div className="gridbox">
         {vehicleList.map((v, i) => (
-          <>
             <Grid key={i} vehicle={v} index={i} start={startsimulation} />
-          </>
         ))}
       </div>
     </div>

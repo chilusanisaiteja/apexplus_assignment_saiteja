@@ -18,6 +18,16 @@ function Allscenarios() {
       .catch((err) => console.log(err));
   }, []);
 
+  const handlesubmit = (id) => {
+    const scenario = scenarioList.filter((scenario)=>(scenario.id===id))
+    axios
+      .delete(`http://localhost:8000/scenarioList/${id}`,scenario)
+      .then((res) => {
+        alert("Data Deleted Successfully!");
+      });
+      setscenarioList(()=>(scenarioList.filter((scenario)=>(scenario.id!==id))));
+  };
+
   return (
     <div className="allscenarios">
       <div className="buttonsrow">
@@ -51,16 +61,19 @@ function Allscenarios() {
                   <td>{scenario.name}</td>
                   <td>{scenario.time}</td>
                   <td>{scenario.vehicleList?.length}</td>
-                  <Link to="/addvehicle">
                     <td className="icon">
+                    <Link to="/addvehicle" style={{textDecoration: 'none',color:'black'}}>
                       <IoAddCircle />
+                    </Link>
                     </td>
-                  </Link>
                   <td className="icon">
+                  <Link to="/addscenaro" style={{textDecoration: 'none',color:'black'}}>
                     <MdModeEdit />
+                    </Link>
                   </td>
                   <td className="icon">
-                    <RiDeleteBin5Fill />
+                    <RiDeleteBin5Fill onClick={()=>{
+                      handlesubmit(scenario.id)}}/>
                   </td>
                 </tr>
               ) : null
