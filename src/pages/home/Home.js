@@ -11,7 +11,6 @@ const Home = () => {
   const [startsimulation, setstartsimulation] = useState(false);
   const [vehicleList, setvehicleList] = useState([]);
 
-
   useEffect(() => {
     axios
       .get("http://localhost:8000/scenarioList")
