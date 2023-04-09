@@ -1,78 +1,91 @@
 .addscenario {
-    color: white;
-    margin-left: 20%;
-    background-color: rgb(27, 23, 23);
-    height: 97.9%;
-    padding-top: 2%;
-    padding-left: 8%;
+  color: white;
+  margin-left: 20%;
+  background-color: rgb(27, 23, 23);
+  height: 97.9%;
+  padding-top: 2%;
+  padding-left: 8%;
 }
 
 .formname {
-    padding-top: 6%;
-    font-size: x-large;
+  padding-top: 5%;
+  font-size: x-large;
 }
 
 .Scenarioform {
-    padding-top: 8%;
-    width: 90%;
-    height: 20%;
-    background-color: rgb(67, 67, 68);
+  padding-top: 4%;
+  width: 90%;
+  height: 30%;
+  background-color: rgb(67, 67, 68);
+  padding-bottom: 70px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .buttons {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 button {
-    margin-right: 25px;
-    width: 10em;
-    height: 3em;
-    font-weight: 700;
-    color: white;
-    border-radius: 5px;
-    border: none;
+  margin-right: 25px;
+  width: 10em;
+  height: 3em;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }
 
 .addbutton {
-    background-color: rgb(41, 167, 41);
+  background-color: rgb(41, 167, 41);
 }
 
 .resetbutton {
-    background-color: rgb(218, 145, 12);
+  background-color: rgb(218, 145, 12);
 }
 
 .gobackbutton {
-    background-color: rgb(37, 137, 204);
-}
-
-.Scenarioform {
-    padding-left: 30px;
-    display: flex;
-    justify-content: space-around;
+  background-color: rgb(37, 137, 204);
 }
 
 .textinput1 {
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
 }
 
 label {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 input {
-    height: 40px;
-    width: 20vw;
-    color: aliceblue;
-    padding-left: 25px;
-    border-radius: 5px;
-    display: flex;
-    background-color: rgb(59, 57, 57);
-    border: 2px solid whitesmoke
+  height: 40px;
+  width: 20vw;
+  color: aliceblue;
+  padding-left: 25px;
+  border-radius: 5px;
+  display: flex;
+  background-color: rgb(59, 57, 57);
+  border: 2px solid whitesmoke;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .textinput2 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+#errorMsg {
+  width: 50%;
+  color: rgb(219, 11, 39);
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
 }

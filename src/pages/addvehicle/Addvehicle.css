@@ -1,68 +1,61 @@
 .addvehicle {
-    color: white;
-    margin-left: 20%;
-    background-color: rgb(27, 23, 23);
-    padding-top: 2%;
-    padding-left: 8%;
-    height: 96%;
+  color: white;
+  margin-left: 20%;
+  background-color: rgb(27, 23, 23);
+  padding-top: 2%;
+  padding-left: 8%;
+  height: 96%;
 }
 
 .formname {
-    padding-top: 6%;
-    font-size: x-large;
+  padding-top: 6%;
+  font-size: x-large;
 }
 
 .vehicleform {
-    padding-top: 40px;
-    margin-right: 30px;
-    height: 30%;
-    background-color: rgb(53, 50, 50);
+  padding-top: 40px;
+  margin-right: 30px;
+  height: 30%;
+  background-color: rgb(53, 50, 50);
+  padding-bottom: 50px;
+  padding-right: 20px;
 }
 
 .row1 {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 20px;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  padding-bottom: 20px;
 }
 
 .row2 {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 20px;
-}
-
-.textinput8 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
 }
 
 input {
-    height: 30px;
-    width: 20vw;
-    padding-left: 25px;
-    border-radius: 5px;
-    display: flex;
-    background-color: rgb(59, 57, 57);
-    border: 2px solid whitesmoke;
-    margin-top: 10px;
-}
-
-label {
-    margin-bottom: 10px;
+  height: 30px;
+  width: 20vw;
+  padding-left: 25px;
+  border-radius: 5px;
+  background-color: rgb(59, 57, 57);
+  border: 2px solid whitesmoke;
+  margin-top: 10px;
 }
 
 select {
-    height: 38px;
-    color: whitesmoke;
-    width: 20vw;
-    padding-left: 25px;
-    border-radius: 5px;
-    display: flex;
-    background-color: rgb(59, 57, 57);
-    border: 2px solid whitesmoke;
+  height: 38px;
+  color: whitesmoke;
+  width: 20vw;
+  padding-left: 25px;
+  border-radius: 5px;
+  display: flex;
+  background-color: rgb(59, 57, 57);
+  border: 2px solid whitesmoke;
 }
 
-.direction {
-    margin-top: 10px;
+.direction,
+.scenariolist {
+  margin-top: 10px;
 }

@@ -1,20 +1,53 @@
 .home {
-    color: white;
-    top: 0;
-    margin-left: 20%;
-    background-color: rgb(27, 23, 23);
-    height: 100%;
+  color: white;
+  top: 0;
+  margin-left: 20%;
+  background-color: rgb(27, 23, 23);
+  height: 100%;
 }
 .scenario {
-    padding-top: 5%;
-    padding-left: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
 select {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .table {
-    padding-top: 10px;
-    padding-left: 40px;
+  padding-top: 10px;
+  padding-left: 40px;
+  margin-left: 20px;
+}
+
+.gridbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60vw;
+  height: 30vh;
+  border: 1px solid green;
+  margin-left: 10%;
+  overflow: hidden;
+  margin-top: 5%;
+  padding-left: 10px;
+}
+
+.simulationbuttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  margin-right: 10%;
+}
+
+.button1 {
+  background-color: green;
+}
+
+.button2 {
+  background-color: rgb(30, 92, 173);
+}
+
+hr.new2 {
+  border-top: 1px dashed rgb(16, 179, 70);
 }
