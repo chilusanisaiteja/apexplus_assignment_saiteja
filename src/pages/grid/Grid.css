@@ -1,0 +1,32 @@
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(177, 80, 216);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.dot1 {
+    position: relative;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(164, 228, 17);
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    animation-name: animea;
+    animation-duration: 4s;
+}
+
+@keyframes animea {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 590px;
+    }
+}
