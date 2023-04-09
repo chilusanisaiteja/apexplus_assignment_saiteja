@@ -1,4 +1,4 @@
-Look in Blam mode for read me
+
 
 How to run:
 1. clone the repo and run (npm install) so all the modules.                                                                                                               
