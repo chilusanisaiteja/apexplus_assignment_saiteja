@@ -14,7 +14,7 @@ function Sidebar() {
         <li>
           <Link className="text-link" to="/addscenario">
             Add Scenario
-          </Link>{" "}
+          </Link>
         </li>
         <li>
           <Link className="text-link" to="/allscenario">
